@@ -1,0 +1,775 @@
+/* ROOT VARIABLES */ 
+
+:root {
+    --background-color: #0A0A0A;
+    --text-bold-color: #fff;
+    --little-text-color: #C7C7C7;
+    --btn-background: #D3E97A;
+    --btn-text: #0A0A0A;
+    --icon-background: #222;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-bold-color);
+    max-width: 100vw;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: var(--text-bold-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 4.75rem;
+}
+
+/* =============== NAVBAR ========= */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .nav_toggle-sm {
+    display: none;
+}
+
+.navbar .container .logo {
+    color: var(--little-text-color);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+}
+
+.navbar .container .logo h3:hover {
+    color: var(--text-bold-color);
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav-links ul li a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    color: var(--little-text-color);
+}
+
+.nav-links ul li a:hover {
+    color: var(--text-bold-color);
+}
+
+.mobile-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+
+/* =============== HERO SECTION ========= */
+
+section.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .container {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-section .container .img-content img {
+    border-radius: 50%;
+}
+
+.hero-section .container .text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .container .text-content h1 {
+        font-size: 6rem;
+        font-weight: 400;
+        line-height: 90%; 
+}
+
+.hero-section .container .text-content p {
+    color: var(--little-text-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.reach-me {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.reach-me button {
+    padding: 1.25rem 1.5rem;
+    background-color: var(--btn-background);
+    color: var(--btn-text);
+    border-radius: 6.25rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 100%; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.reach-me .svg {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--icon-background);
+    border-radius: 50%;
+    margin-left: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.svg svg {
+    stroke: var(--btn-background);
+}
+
+/* =============== SKILL SECTION ========= */
+
+
+.skills-section .container, .experience-section .container, .featured-project-section .container, .about-section .container, .contact-section, .footer-section .container {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-skills, .my-experience, .about-section-text, .contact-section-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skills-section .container .skills, .experience1, .about-text, .my-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 53%;
+}
+
+.my-skills .skills p, .featured-project p, .about-text p, .contact-text p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--little-text-color);
+}
+
+.my-skills-text h1, .my-experience-text h1, .featured-project h1, .about-text h1, .contact-text h1 {
+    font-size: 4.75rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.skills .skillset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skillset a {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--text-bold-color);
+    padding: 1rem 2rem;
+    background: none;
+    border: 2px solid var(--little-text-color);
+    outline: none;
+    border-radius: 6.25rem;
+}
+
+/* =============== EXPERIENCE SECTION  ========= */
+
+.frontend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frontend h3 {
+    color: var(--text-bold-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.frontend p, .frontend-text, .experience2-text {
+    color: var(--little-text-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+p.reno {
+    color: var(--btn-background);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0.5rem 0;
+}
+
+/* =============== FEATURED PROJECT SECTION  ========= */
+
+.my-projects {
+    margin: 3rem 0;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects {
+    width: 31%;
+    height: auto;
+    border-radius: 0.75rem;
+    background: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.5rem 1.5rem;
+}
+
+.projects h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--text-bold-color);
+}
+
+.projects p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#project-info {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.year, .role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year p, .role P {
+    font-size: 1rem;
+    line-height: 160%;
+    font-weight: 500;
+}
+
+.live {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.live a {
+    color: var(--btn-background);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    border-bottom: 1px solid var(--btn-background);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.live a svg {
+    width: 1.2rem;
+}
+
+/* =============== ABOUT SECTION ========= */
+
+.about-img img {
+    border-radius: 2rem;
+}
+
+.about-text a {
+    color: var(--little-text-color);
+}
+
+.about-text a:hover {
+    color: var(--text-bold-color);
+}
+
+/* =============== CONTACT SECTION ========= */
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-text p span {
+    border-bottom: 2px solid var(--btn-background);
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.social-links a {
+    background: transparent;
+}
+
+.social-links a svg {
+    stroke: var(--btn-background);
+}
+
+.social-links a svg:hover {
+    stroke: var(--text-bold-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--text-bold-color);
+    background: transparent;
+    color: var(--little-text-color);
+ }
+
+ form input:first-child {
+    margin: 0;
+ }
+
+ form textarea {
+    height: 8rem;
+}
+
+form button.btn {
+    width: 10rem;
+    background-color: var(--btn-background);
+    color: var(--btn-text);
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.footer-section .container {
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: var(--text-bold-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--little-text-color);
+    margin-bottom: 5rem;
+}
+
+.projects hr {
+    margin-bottom: 0;
+}
+
+ /* -------- MEDIA QUERIES ----------*/
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        height: 3rem;
+    }
+
+    .navbar .container .logo h3 {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav_toggle-sm {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+
+    /* -------- HERO SECTION ----------*/
+
+    .hero-section .container {
+        margin: 3rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .container .img-content img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-section .container .text-content h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 2rem 0;
+        line-height: 100%;
+    } 
+    
+    .hero-section .container .text-content p {
+        font-size: 1.125rem;
+        text-align: center; 
+        padding: 0 1rem;
+    }
+
+    .hero-section .container .text-content p br {
+        display: none;
+    }
+
+    .reach-me {
+        gap: 0.2rem;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .reach-me button {
+        padding: 0.8rem 1.25rem;
+        background-color: var(--btn-background);
+        color: var(--btn-text);
+        border-radius: 4rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        line-height: 100%; 
+    }
+
+    .reach-me .svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .reach-me .svg svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    /* =============== SKILL SECTION ========= */
+
+    .my-skills, .my-experience {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills-section .container .skills, .experience1, .about-text {
+        width: unset;
+        padding: 0 1rem;
+    }
+
+    .my-skills-text h1, .my-experience-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .my-skills .skills p, .featured-project p, .about-text p {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .skills .skillset {
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skillset a {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.8rem 1rem;
+    }
+
+    /* =============== EXPERIENCE SECTION  ========= */
+
+    .skills-section .container, .experience-section .container, .featured-project-section .container, .about-section .container, .contact-section .container  {
+        margin-bottom: 3rem;
+    }
+
+    .frontend h3 {
+        font-size: 1rem;
+    }
+
+    .frontend p, .frontend-text, .experience2-text, .contact-text p {
+        color: var(--little-text-color);
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    p.reno {
+        font-weight: 500;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .experience1 {
+        gap: 1rem;
+    }
+
+    /* =============== FEATURED PROJECT SECTION ON ========= */
+
+    .my-projects {
+        display: block;
+        margin: 2rem 1rem;
+    }
+
+    .featured-project h1, .about-text h1, .contact-text h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .featured-project p br {
+        display: none;
+    }
+
+    .featured-project p.strong-text {
+        margin: 0 1rem;
+    }
+
+    .projects {
+        width: 100%;
+        align-items: center;
+        padding: 1rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects img {
+        width: 100%;
+    }
+
+    .projects h2 {
+        text-align: left;
+        font-size: 1.25rem;
+    }
+
+    .projects p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .year, .role {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    
+    .year p, .role P {
+        font-size: 1rem;
+        line-height: 160%;
+        font-weight: 500;
+    }
+
+    .live {
+        gap: 1rem;
+    }
+    
+    .live a {
+        font-size: 0.8rem;
+    }
+    
+    .live a svg {
+        width: 1rem;
+    }
+
+    /* =============== ABOUT SECTION ========= */
+
+    .about-section-text, .contact-section-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+
+    .about-text {
+        margin-top: 2rem;
+    }
+
+    .about-text a {
+        text-align: center;
+    }
+
+    /* =============== CONTACT SECTION ========= */
+
+    .contact-text {
+        gap: 0.5rem;
+    }
+
+    .contact-text p span {
+        border-bottom: 1px solid var(--btn-background);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-links a svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .my-form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    form input {
+        margin: 1rem o;
+    }
+
+    form input, form textarea {
+        padding: 1rem;
+     }
+
+     form textarea {
+        height: 6rem;
+    }
+
+    form button.btn {
+        align-self: center;
+        width: 8rem;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .contact-section .container {
+        margin-bottom: 0;
+    }
+
+    .footer-section .container {
+        margin-top: 0;
+    }
+
+    hr {
+        margin-bottom: 3rem;
+    }
+
+     /* -------- MOBILE NAV ----------*/
+
+    nav {
+        display: none;
+    }
+
+    .mobile-nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-nav .container .logo {
+        color: var(--little-text-color);
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: "Bebas Neue";
+    }
+
+    .mobile-nav .container .logo:hover {
+        color: var(--text-bold-color);
+    }
+
+}   
